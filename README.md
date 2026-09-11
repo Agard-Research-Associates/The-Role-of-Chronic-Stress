@@ -23,6 +23,7 @@ Chronic psychological stress exerts a clinically significant metabolic influence
 | Path | Description |
 | --- | --- |
 | [`index.html`](index.html) | The complete review as a single web page: title page, table of contents, all six sections, and the reference list |
+| [`assets/`](assets) | Favicon and touch icon used by the page |
 | [`CITATION.cff`](CITATION.cff) | Machine-readable citation metadata |
 | [`LICENSE`](LICENSE) | Copyright notice and license terms |
 
