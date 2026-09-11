@@ -12,168 +12,138 @@
 <meta property="og:title" content="The Role of Chronic Stress in the Pathophysiology of Metabolic and Cardiovascular Disease">
 <meta property="og:description" content="Working paper, not peer reviewed. Full text.">
 <meta property="og:type" content="article">
-<link rel="icon" href="assets/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96.png">
-<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,300;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<meta name="dc.rights" content="CC BY-NC-SA 4.0">
 <style>
-  :root{
-    --ink:#131c26;
-    --ink-soft:#3d4b59;
-    --steel:#697a8a;
-    --paper:#eef0f2;
-    --card:#f8f9fa;
-    --rule:#c9d1d8;
-    --signal:#a8560c;
-    --signal-tint:#fbf1e4;
-    --measure:68ch;
-  }
   *{box-sizing:border-box}
   html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
   @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
   body{
-    margin:0;background:var(--paper);color:var(--ink);
-    font-family:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
-    font-size:17px;line-height:1.6;
+    margin:0;
+    background:#ffffff;
+    color:#000000;
+    font-family:"Times New Roman",Times,serif;
+    font-size:12pt;
+    line-height:2;
   }
-  .wrap{max-width:840px;margin:0 auto;padding:0 28px}
-  a{color:var(--signal)}
-  a:focus-visible{outline:2px solid var(--signal);outline-offset:3px}
+  .page{max-width:8.5in;margin:0 auto;padding:1in;background:#ffffff}
+
+  a{color:#0563c1}
+  a:focus-visible{outline:2px solid #0563c1;outline-offset:2px}
   .skip{position:absolute;left:-9999px}
-  .skip:focus{left:20px;top:12px;z-index:20;background:#fff;padding:10px 14px;border:1px solid var(--ink)}
+  .skip:focus{left:12px;top:12px;z-index:5;background:#fff;border:1px solid #000;padding:8px 12px}
 
-  /* Running head: the record's status travels with the reader. */
-  .topbar{
-    position:sticky;top:0;z-index:10;background:rgba(238,240,242,.94);
-    backdrop-filter:saturate(140%) blur(6px);border-bottom:1px solid var(--rule);
+  /* ---------- title page ---------- */
+  .cover{text-align:center;padding:1.6in 0 0}
+  .cover h1{font-size:14pt;font-weight:400;line-height:1.7;margin:0;letter-spacing:0}
+  .cover h1 .sub{display:block;font-size:14pt;font-weight:400;margin-top:.15em}
+  .cover .by{margin:.9in 0 0;line-height:1.9}
+  .cover .author{margin:0;line-height:1.9}
+  .cover .date{margin:.55in 0 0;line-height:1.9}
+  .cover .kind{margin:.1in 0 0;line-height:1.9}
+  .cover .rights{margin:1.5in auto 0;max-width:6in;font-size:9pt;line-height:1.5}
+  .cover .rights p{margin:0 0 .5em}
+  .cover .noticehead{margin:.35in 0 .35em;font-size:10pt;font-weight:700;line-height:1.4}
+  .cover .noticebody{margin:0 auto;max-width:6in;font-size:9.5pt;line-height:1.5;text-align:left}
+  .cover .noticebody p{margin:0 0 .5em}
+
+  hr.pagebreak{border:0;border-top:1px solid #000;margin:1in 0 .8in;opacity:.25}
+
+  /* ---------- headings ---------- */
+  h2.label{
+    font-size:12pt;font-weight:700;text-align:center;
+    margin:2.2em 0 1em;line-height:1.6;
   }
-  .topbar .wrap{
-    display:flex;gap:16px;align-items:center;justify-content:space-between;
-    padding-top:9px;padding-bottom:9px;
-    font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
-    font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--steel);
-  }
-  .topbar .t{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-  .topbar .chip{color:var(--signal);border:1px solid #e0c9ab;background:var(--signal-tint);padding:3px 8px;white-space:nowrap}
-  .topbar a{color:var(--steel);text-decoration:none;white-space:nowrap}
-  .topbar a:hover{color:var(--ink)}
+  h2.head{font-size:12pt;font-weight:700;margin:2.2em 0 .9em;line-height:1.6;text-align:left}
+  h3.subhead{font-size:12pt;font-weight:700;font-style:italic;margin:1.6em 0 .6em;line-height:1.6}
 
-  header.titlepage{padding:76px 0 0}
-  .eyebrow{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--steel);margin:0 0 26px}
-  h1{font-family:"Newsreader",Georgia,"Times New Roman",serif;font-weight:400;font-size:clamp(2.1rem,5.1vw,3.35rem);line-height:1.14;letter-spacing:-.015em;margin:0;text-wrap:balance}
-  h1 .sub{display:block;font-size:.6em;line-height:1.28;color:var(--ink-soft);margin-top:.42em}
-  .byline{margin:34px 0 0;font-family:"Newsreader",Georgia,serif;font-size:1.3rem;font-weight:500}
-  .imprint{margin:6px 0 0;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--steel)}
-  hr.rule{height:1px;background:var(--rule);border:0;margin:56px 0 0}
+  /* ---------- body text ---------- */
+  .body p{margin:0;text-indent:.5in;text-align:left;orphans:2;widows:2}
+  .abstract p{margin:0;text-indent:0;text-align:left}
+  p.plain{margin:0 0 1em;text-indent:0}
+  p.kw{margin:0;text-indent:0}
 
-  .notice{margin:44px 0 0;padding:22px 24px;background:var(--signal-tint);border:1px solid #e6d3ba;border-left:4px solid var(--signal)}
-  .notice h2{margin:0 0 8px;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12.5px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--signal)}
-  .notice p{margin:0;max-width:var(--measure);font-size:15.5px;color:#4a3a26}
-  .notice p + p{margin-top:10px}
-
-  section{padding:54px 0 0;scroll-margin-top:64px}
-  h2.label{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11.5px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--steel);margin:0 0 20px;padding-bottom:10px;border-bottom:1px solid var(--rule)}
-  h3.subhead{font-family:"Newsreader",Georgia,serif;font-weight:600;font-size:1.16rem;margin:2em 0 .7em;max-width:var(--measure);color:#22303d}
-  h2.head{font-family:"Newsreader",Georgia,serif;font-weight:500;font-size:clamp(1.5rem,3.4vw,2rem);line-height:1.24;margin:0 0 6px;max-width:var(--measure);letter-spacing:-.01em}
-  .secnum{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--signal);display:block;margin:0 0 12px}
-  .sechead{border-top:1px solid var(--rule);padding-top:26px;margin-bottom:26px}
-
-  p{max-width:var(--measure)}
-  .body p{font-family:"Newsreader",Georgia,serif;font-size:1.19rem;line-height:1.74;color:#1c2733;margin:0 0 1.15em;hyphens:auto}
-  .abstract p{font-family:"Newsreader",Georgia,serif;font-size:1.19rem;line-height:1.74;color:#1c2733;margin:0}
-  .lead{font-size:1.24rem}
-
-  sup.fn{font-family:"IBM Plex Sans",sans-serif;font-size:.62em;line-height:0;vertical-align:super}
-  sup.fn a{text-decoration:none;padding:0 1px}
+  sup.fn{font-size:.7em;line-height:0;vertical-align:super}
+  sup.fn a{color:#000;text-decoration:none}
   sup.fn a:hover{text-decoration:underline}
-  :target{background:#fdf3e2}
+  :target{background:#f2f2f2}
 
-  ul.keys{list-style:none;display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:0;max-width:var(--measure)}
-  ul.keys li{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12px;color:var(--ink-soft);background:var(--card);border:1px solid var(--rule);padding:5px 10px}
+  /* ---------- table of contents ---------- */
+  nav.toc{margin:0 auto;max-width:6.2in}
+  nav.toc ol{list-style:none;counter-reset:toc;margin:0;padding:0}
+  nav.toc ol li{counter-increment:toc;margin:0 0 .35em;line-height:1.6}
+  nav.toc ol a{color:#000;text-decoration:none;display:block;padding:.1em 0}
+  nav.toc ol a:hover,nav.toc ol a:focus{text-decoration:underline}
+  nav.toc ol a::before{content:counter(toc,upper-roman) ".  "}
+  nav.toc p.aux{margin:1em 0 0;text-indent:0;text-align:center}
+  nav.toc p.aux a{color:#000}
 
-  nav.toc ol{list-style:none;counter-reset:toc;margin:0;padding:0;max-width:var(--measure)}
-  nav.toc li{counter-increment:toc;border-bottom:1px solid var(--rule)}
-  nav.toc li:first-child{border-top:1px solid var(--rule)}
-  nav.toc ol a{display:flex;gap:16px;align-items:baseline;padding:13px 2px;text-decoration:none;color:var(--ink)}
-  nav.toc ol a:hover{color:var(--signal)}
-  nav.toc ol a::before{content:counter(toc,upper-roman);font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11.5px;color:var(--steel);min-width:2.6em;letter-spacing:.1em}
-  nav.toc ol span{font-family:"Newsreader",Georgia,serif;font-size:1.05rem}
-
-  figure{margin:36px 0;max-width:100%}
-  figure img{width:100%;height:auto;display:block;background:#fff;border:1px solid var(--rule)}
-  figure svg{width:100%;height:auto;display:block;background:#fff;border:1px solid var(--rule)}
-  figcaption{margin-top:12px;font-size:14px;line-height:1.55;color:var(--ink-soft);max-width:var(--measure)}
-  figcaption b{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--signal);font-weight:500;display:block;margin-bottom:5px}
-
-  ol.notes{font-size:14px;line-height:1.6;color:var(--ink-soft);padding-left:2.4em;max-width:78ch}
-  ol.notes li{margin:0 0 .7em;scroll-margin-top:70px;overflow-wrap:anywhere}
-  ol.notes li::marker{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11.5px;color:var(--steel)}
-  a.back{text-decoration:none;color:var(--steel);font-size:12px;margin-left:4px}
-  a.back:hover{color:var(--signal)}
-
-  .biblio{max-width:78ch}
-  .biblio p{font-size:14.5px;line-height:1.55;color:var(--ink-soft);padding-left:2.2em;text-indent:-2.2em;margin:0 0 .8em;max-width:none;word-break:break-word}
-
-  p.body-note{max-width:var(--measure);font-size:16px;color:var(--ink-soft);margin:0 0 14px}
-  footer{margin-top:70px;border-top:1px solid var(--rule);padding:26px 0 80px}
-  footer p{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11.5px;letter-spacing:.1em;color:var(--steel);margin:0 0 6px;max-width:82ch;line-height:1.8}
-
-  @media (max-width:600px){
-    body{font-size:16px}
-    header.titlepage{padding-top:44px}
-    .wrap{padding:0 20px}
-    .body p,.abstract p{font-size:1.08rem}
-    .topbar .t{display:none}
+  /* ---------- notes and references ---------- */
+  ol.notes{font-size:10pt;line-height:1.45;margin:0;padding-left:2.4em}
+  ol.notes li{margin:0 0 .6em;scroll-margin-top:12px;overflow-wrap:anywhere}
+  ol.refs{font-size:11pt;line-height:1.5;margin:0;padding-left:2.4em}
+  ol.refs li{margin:0 0 .7em;scroll-margin-top:12px;overflow-wrap:anywhere}
+  a.back{text-decoration:none;color:#000;font-size:10pt}
+  .biblio{margin:0}
+  .biblio p{
+    font-size:11pt;line-height:1.5;margin:0 0 .7em;
+    padding-left:.5in;text-indent:-.5in;text-align:left;overflow-wrap:anywhere;
   }
+
+  section{scroll-margin-top:12px}
+  footer{margin-top:2.4em;padding-top:1em;border-top:1px solid #000}
+  footer p{margin:0 0 .3em;font-size:9.5pt;line-height:1.5;text-indent:0}
+
+  @media (max-width:820px){
+    body{font-size:11.5pt;line-height:1.85}
+    .page{padding:.55in .4in}
+    .cover{padding-top:.7in}
+    .cover .rights{margin-top:.8in}
+    .body p{text-indent:.3in}
+    .biblio p{padding-left:.3in;text-indent:-.3in}
+  }
+
   @media print{
-    .topbar,nav.toc{display:none}
-    body{background:#fff;font-size:11pt}
-    .body p,.abstract p{font-size:11.5pt}
+    .page{max-width:none;padding:0}
+    @page{margin:1in}
     a{color:#000;text-decoration:none}
-    section{padding-top:24px}
+    hr.pagebreak{border:0;break-after:page;margin:0}
+    h2.head,h2.label{break-after:avoid}
+    .body p{orphans:3;widows:3}
   }
-  ol.refs{font-size:14.5px;line-height:1.6;color:var(--ink-soft);padding-left:2.4em;max-width:78ch}
-  ol.refs li{margin:0 0 .8em;scroll-margin-top:70px;overflow-wrap:anywhere}
-  ol.refs li::marker{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11.5px;color:var(--steel)}
-  sup.fn a{color:var(--signal)}
 </style>
 </head>
 <body>
 <a class="skip" href="#introduction">Skip to the review</a>
 
-<div class="topbar">
-  <div class="wrap">
-    <span class="chip">Working paper · Not peer reviewed</span>
-    <span class="t">Nandakumar · Chronic Stress and Metabolic Disease</span>
-    <a href="#contents">Contents</a>
-  </div>
-</div>
-
-<div class="wrap">
+<div class="page">
 <article>
 
-  <header class="titlepage">
-    <p class="eyebrow">Working paper · Independent research · Literature review</p>
-    <h1>
-      The Role of Chronic Stress
-      <span class="sub">Pathophysiology of Metabolic and Cardiovascular Disease</span>
-    </h1>
-    <p class="byline">Shruthi Nandakumar</p>
-    <p class="imprint">5 February 2026 · Working paper · Version 1</p>
-    <hr class="rule">
+  <header class="cover">
+    <h1>The Role of Chronic Stress in the Pathophysiology of
+      <span class="sub">Metabolic and Cardiovascular Disease</span></h1>
+    <p class="by">By</p>
+    <p class="author">Shruthi Nandakumar</p>
+    <p class="date">February 5, 2026</p>
+    <p class="kind">Working Paper</p>
+    <p class="kind">Literature Review</p>
+    <div class="rights">
+      <p>&copy; 2026 Shruthi Nandakumar. All rights reserved.</p>
+      <p>The Role of Chronic Stress in the Pathophysiology of: Metabolic and Cardiovascular Disease &copy; 2026 by Shruthi Nandakumar is licensed under
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>. To view a copy of this license, visit
+      https://creativecommons.org/licenses/by-nc-sa/4.0/</p>
+      <p class="noticehead">Working Paper Notice</p>
+      <div class="noticebody">
+      <p>This is an independent literature review. It has not been peer reviewed, it has not been submitted to a journal, and it has not been published elsewhere. It represents the author's own analysis of the published literature.</p>
+      <p>Nothing here is medical advice. Conclusions are working positions and may be revised. Cite it as a working paper, not as peer-reviewed research.</p>
+      </div>
+    </div>
   </header>
 
-  <aside class="notice" role="note">
-    <h2>&#9888; Working paper · Not peer reviewed</h2>
-    <p>This is an independent literature review. It has not been peer reviewed, it has not been submitted to a journal, and it has not been published elsewhere. It represents the author's own analysis of the published literature.</p>
-    <p>Nothing here is medical advice. Conclusions are working positions and may be revised. Cite it as a working paper, not as peer-reviewed research.</p>
-  </aside>
+  <hr class="pagebreak">
 
   <section id="contents">
-    <h2 class="label">Contents</h2>
+    <h2 class="label">Table of Contents</h2>
     <nav class="toc">
       <ol>
         <li><a href="#introduction"><span>Introduction</span></a></li>
@@ -183,16 +153,13 @@
         <li><a href="#stress-related-diet-changes"><span>Stress-Related Diet Changes</span></a></li>
         <li><a href="#conclusion"><span>Conclusion</span></a></li>
       </ol>
-      <p class="body-note" style="margin-top:18px"><a href="#references">References</a> &nbsp;·&nbsp; <a href="#citation">Citation and copyright</a></p>
+      <p class="aux"><a href="#references">References</a> &nbsp;·&nbsp; <a href="#citation">Citation and Copyright</a></p>
     </nav>
   </section>
 
 
   <section id="introduction">
-    <div class="sechead">
-      <span class="secnum">Section I</span>
-      <h2 class="head">Introduction</h2>
-    </div>
+    <h2 class="head">I. Introduction</h2>
     <div class="body">
       <p>Chronic psychological stress is a mental issue that causes significant physical harm. Ideally, the effects of stress are meant to adapt one’s body to fight against perceived stress. However, chronic stress is an extreme result of these adaptive mechanisms that cause major physiological issues. These effects are seen via the effects of cortisol, a steroid hormone produced via the hypothalamic-pituitary-adrenal axis as well as inflammation as a response to stress. It has a considerable influence on metabolism, the immune system, and cardiovascular system due to its effects on blood glucose concentration and other vital processes.<sup class="fn" id="cite1"><a href="#ref1">1</a></sup>Type 2 Diabetes Mellitus (T2DM), hypertension, and obesity are metabolic disorders with increasing global prevalence. T2DM is a chronic disease arising from the development of insulin resistance, leading to high blood glucose concentrations. This may cause further complications if left untreated, including damage to the eyes, renal damage, neuropathy, and heart damage.<sup class="fn" id="cite2"><a href="#ref2">2</a></sup>Obesity is an excessive accumulation of fat posing a risk to health. Complications include diabetes, as well as musculoskeletal issues like osteoarthritis, as well as some cancers.<sup class="fn" id="cite3"><a href="#ref3">3</a></sup> Hypertension is also a chronic condition in which measured blood pressure is over 130 mmHg systolic and/or over 80 mmHg diastolic. This disease further increases the likelihood of other complications in the body, including heart attacks, strokes, heart failure, renal issues, vision problems, and atherosclerosis.<sup class="fn" id="cite4"><a href="#ref4">4</a></sup>It is certain that these diseases hold certain controversy, particularly with diet culture and body positivity. Regardless, it is vital to look at these diseases from a clinical standpoint under the lens of stress and how its effects may exacerbate or cause them.</p>
       <p>This review serves to explore how chronic stress affects chronic disease by incorporating recent evidence examining cortisol as a predictor or biomarker of T2DM, hypertension, obesity. We explore stress’s mechanism and role in these diseases, as well as further racial and ethnic disparities in stress patterns and metabolic diseases, and the potential confounding presence of stress-related eating behavior.</p>
@@ -203,20 +170,14 @@
   </section>
 
   <section id="diabetes-obesity">
-    <div class="sechead">
-      <span class="secnum">Section II</span>
-      <h2 class="head">Diabetes &amp; Obesity</h2>
-    </div>
+    <h2 class="head">II. Diabetes &amp; Obesity</h2>
     <div class="body">
       <p>T2DM is marked by insulin resistance, which in turn oversees increased HbA1C, increased triglycerides, and lower HDL (“good” cholesterol). All these are a result of hypothalamic-pituitary-adrenal (HPA) axis activation, autonomic nervous system (ANS) activation, and inflammation. HPA axis activation increases cortisol and by effect, increases intra-abdominal fat, causes insulin resistance, and causes T2DM. This direct relationship of cortisol with insulin resistance and intra-abdominal fat is evidence of the strong relationship between cortisol and diabetes as well as obesity. ANS activation results in increased epinephrine and norepinephrine which directly increases insulin resistance. Inflammation increases the cytokine interleukin-6 which increases C-reactive protein via liver stimulation, which in turn both causes insulin resistance and causes endothelial dysfunction, both causes of T2DM.<sup class="fn" id="cite5"><a href="#ref5">5</a></sup> Another major effect of chronically increased blood glucose levels is damage to mitochondria as well as mitochondrial DNA, which contributes to telomere shortening. T2DM often is comorbid with obesity. In fact, visceral adipose tissue is a source of inflammatory factors that further circulate to the pancreas and affect insulin sensitivity.<sup class="fn" id="cite6"><a href="#ref6">6</a></sup> This is especially concerning as cortisol as a result of chronic stress, favors a higher distribution of white adipose tissue, specifically to the abdominal region. To further increase the feedback loop, it also increases the appetite for ‘“energy-dense” foods. <sup class="fn" id="cite8"><a href="#ref8">8</a></sup> This acts as an unbreakable cycle that feeds into the loop of stress, obesity, and hyperglycemia. Most interestingly, cortisol responsiveness has been found to act as a metabolic marker for those who are likely to gain weight.<sup class="fn" id="cite9"><a href="#ref9">9</a></sup></p>
     </div>
   </section>
 
   <section id="hypertension">
-    <div class="sechead">
-      <span class="secnum">Section III</span>
-      <h2 class="head">Hypertension</h2>
-    </div>
+    <h2 class="head">III. Hypertension</h2>
     <div class="body">
       <p>The connection between stress and blood pressure is arguably the most well understood among the general population. Generally, stressful situations cause temporary blood pressure increases. Specifically, in situations where a lot is expected of an individual, but the individual perceives there to be a lack of resources, there is an increase in heart rate and blood pressure. The opposite is true as well; when there are sufficient resources, but the situational demand is still high, there are only smaller increases in blood pressure. In this study, blood pressure via smartphone optic sensor was measured, as well as self-reported emotional, psychosocial and behavioral data. Utilizing a baseline of blood pressure measured during the lowest measured heart rate, the study showed that with increasing perceived stress, both systolic and diastolic blood pressure were significantly higher than the baseline.<sup class="fn" id="cite10"><a href="#ref10">10</a></sup></p>
       <p>Stress perception has significant effects in a neurological sense. Environmental changes are perceived by the brain to be “stressful” via the neocortex or the limbic system (fight or flight responses). A neuroendocrine response to stress will occur if an individual feels fearful or incapable of handling the situation. As such, the sympathetic nervous system and the HPA axis are activated. As such, allostasis occurs, allowing the body to remain stable under environmental changes. <sup class="fn" id="cite11"><a href="#ref11">11</a></sup>Nonetheless, these mechanisms pose a risk if stress is chronic. Increased blood pressure from mental stress has been related to carotid atherosclerosis.<sup class="fn" id="cite12"><a href="#ref12">12</a></sup></p>
@@ -225,30 +186,21 @@
   </section>
 
   <section id="racial-ethnic-disparities">
-    <div class="sechead">
-      <span class="secnum">Section IV</span>
-      <h2 class="head">Racial &amp; Ethnic Disparities</h2>
-    </div>
+    <h2 class="head">IV. Racial &amp; Ethnic Disparities</h2>
     <div class="body">
       <p>When considering at-risk populations, it is certain that stress affects certain people more than others. Overall, individuals that are Asian, Hispanic, and Black see higher levels of reported stress than white individuals. Among these groups, it is certain that stressful events arising from economic, cultural, and societal expectations contribute to their risk. <sup class="fn" id="cite14"><a href="#ref14">14</a></sup> It becomes significant that we see an increased rate of undiagnosed hypertension and diabetes in these populations compared to white individuals. <sup class="fn" id="cite15"><a href="#ref15">15</a></sup> With regards to inflammatory markers, Black and Hispanic individuals were among the highest risk categories for CRP and IL-6 levels. <sup class="fn" id="cite16"><a href="#ref16">16</a></sup></p>
     </div>
   </section>
 
   <section id="stress-related-diet-changes">
-    <div class="sechead">
-      <span class="secnum">Section V</span>
-      <h2 class="head">Stress-Related Diet Changes</h2>
-    </div>
+    <h2 class="head">V. Stress-Related Diet Changes</h2>
     <div class="body">
       <p>Stress eating is a behavior almost everyone can relate to, and poses certain risks to health if uncontrolled. Stress causes a negative mental experience, which in turn causes some to turn to “junk” foods. Stress influences eating behavior as high perceived stress is inversely related to a healthy diet.<sup class="fn" id="cite17"><a href="#ref17">17</a></sup> As seen in the “Reward Based Stress Eating Model” we see that cortisol motivates calorically dense food intake. In fact, both stress and “junk” food stimulate endogenous opioid release and decrease the effects of the HPA axis, which attenuates the stress response. In this way, stress eating becomes compulsive, like an addiction. Certain calorically dense and palatable food may gain “reward” value via cortisol’s influence over neuroendocrine and peptide mediators.<sup class="fn" id="cite18"><a href="#ref18">18</a></sup></p>
     </div>
   </section>
 
   <section id="conclusion">
-    <div class="sechead">
-      <span class="secnum">Section VI</span>
-      <h2 class="head">Conclusion</h2>
-    </div>
+    <h2 class="head">VI. Conclusion</h2>
     <div class="body">
       <p>The evidence reviewed demonstrates chronic psychological stress is clearly a mechanistic component of type 2 diabetes mellitus, obesity, and hypertension. Prolonged HPA axis and sympathetic nervous system activation directly leads to sustained cortisol exposure, inflammatory signaling, and autonomic imbalance, increasing insulin resistance, visceral fat accumulation, and elevated blood pressure. These physiological effects are further reinforced via stress related eating behaviors, mainly via the rewarding of calorically dense foods, which temporarily mediate stress while perpetuating metabolic dysregulation. Further, disparities in stress exposure and physiology among racial and ethnic minorities highlight the importance of chronic stress as a contributor to disease in certain populations. Chronic stress is a vital aspect when understanding causes of disease. Addressing neuroendocrine regulation, the inflammatory response, behavior and the socioeconomic environment is key in finding effective prevention, management, and treatment strategies going forward.</p>
     </div>
@@ -279,19 +231,25 @@
   </section>
 
   <section id="citation">
-    <h2 class="label">Citation and copyright</h2>
-    <p class="body-note"><strong>Note:</strong> This review follows the 11th edition of the American Medical Association citation format. All references and citations are formatted according to AMA guidelines for medical and scientific research.</p>
-    <p class="body-note"><strong>AMA 11th edition recommended citation:</strong><br>
+    <h2 class="label">Citation and Copyright</h2>
+    <p class="plain"><strong>Note:</strong> This review follows the 11th edition of the American
+    Medical Association citation format. All references and citations are formatted according to
+    AMA guidelines for medical and scientific research.</p>
+    <p class="plain"><strong>AMA 11th edition recommended citation:</strong><br>
     Nandakumar S. The role of chronic stress in the pathophysiology of metabolic and cardiovascular disease. Working paper. Published February 5, 2026.</p>
-    <p class="body-note">&copy; 2026 Shruthi Nandakumar. All rights reserved.</p>
-    <p class="body-note"><em>The Role of Chronic Stress in the Pathophysiology of Metabolic and Cardiovascular Disease</em> &copy; 2026 by Shruthi Nandakumar is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>. You may share the work unadapted, for noncommercial purposes, with credit to the author.</p>
-    <p class="body-note">No part of this publication may be reproduced, distributed, or transmitted in any form or by any means, including photocopying or other electronic or mechanical methods, without prior written permission of the copyright owner, except as permitted by the Creative Commons license.</p>
+    <p class="plain">&copy; 2026 Shruthi Nandakumar. All rights reserved.</p>
+    <p class="plain">The Role of Chronic Stress in the Pathophysiology of Metabolic and Cardiovascular Disease &copy; 2026 by Shruthi Nandakumar is licensed under
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>. This license permits sharing and adaptation for
+    noncommercial purposes, provided the author is credited and any adapted material is distributed
+    under the same license.</p>
+    <p class="plain">To view a copy of this license, visit
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">https://creativecommons.org/licenses/by-nc-sa/4.0/</a>.</p>
   </section>
 
   <footer>
-    <p>Working paper &middot; Not peer reviewed &middot; Independent research</p>
+    <p>Working Paper &middot; Not peer reviewed &middot; Independent research</p>
     <p>The views expressed in this review are those of the author alone. Nothing here is medical advice.</p>
-    <p>&copy; 2026 Shruthi Nandakumar &middot; CC BY-NC-ND 4.0</p>
+    <p>&copy; 2026 Shruthi Nandakumar &middot; CC BY-NC-SA 4.0</p>
   </footer>
 
 </article>

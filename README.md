@@ -16,16 +16,13 @@
 
 Chronic psychological stress exerts a clinically significant metabolic influence, contributing to chronic disease through sustained activation of neuroendocrine and inflammatory pathways. While acute stress responses are adaptive, persistent activation of the hypothalamic-pituitary-adrenal axis and sympathetic nervous system produces cortisol dysregulation, chronic inflammation, and maladaptive behavioral responses. This review synthesizes recent clinical and epidemiological evidence on how these mechanisms contribute to type 2 diabetes mellitus, obesity, and hypertension, examines cortisol as both a mediator and a candidate biomarker, and considers two compounding factors: racial and ethnic disparities in stress exposure and physiology, and stress-related eating behavior.
 
-Sources were identified through Google Scholar and institutional research databases, limited to peer-reviewed articles published after 2010, with preference given to government organizations and academic institutions.
-
 **Topics:** chronic stress; cortisol; hypothalamic-pituitary-adrenal axis; type 2 diabetes mellitus; obesity; hypertension; insulin resistance; inflammation; health disparities; stress eating
 
 ## Contents
 
 | Path | Description |
 | --- | --- |
-| [`index.html`](index.html) | The complete review as a single web page: title page, all six sections, and the reference list |
-| [`assets/`](assets) | Favicon and touch icon used by the page |
+| [`index.html`](index.html) | The complete review as a single web page: title page, table of contents, all six sections, and the reference list |
 | [`CITATION.cff`](CITATION.cff) | Machine-readable citation metadata |
 | [`LICENSE`](LICENSE) | Copyright notice and license terms |
 
@@ -65,9 +62,9 @@ BibTeX:
 
 © 2026 Shruthi Nandakumar. All rights reserved.
 
-*The Role of Chronic Stress in the Pathophysiology of Metabolic and Cardiovascular Disease* © 2026 by Shruthi Nandakumar is licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).
+*The Role of Chronic Stress in the Pathophysiology of Metabolic and Cardiovascular Disease* © 2026 by Shruthi Nandakumar is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
-You may share this work in unadapted form, for noncommercial purposes, with credit to the author. You may not distribute modified versions. No part of this publication may be reproduced, distributed, or transmitted in any form or by any means, including photocopying or other electronic or mechanical methods, without prior written permission of the copyright owner, except as permitted by the Creative Commons license. Full terms are in [`LICENSE`](LICENSE).
+You may share and adapt this work for noncommercial purposes, provided the author is credited and any adapted material is distributed under the same license. Full terms are in [`LICENSE`](LICENSE).
 
 ## Disclaimer
 
